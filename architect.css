@@ -1,0 +1,95 @@
+/************HEADER**********/
+
+header {
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 45px;
+    font-weight: 700px;
+    color: #131313;
+}
+
+nav>ul {
+    display: flex;
+
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/*******************BANNER**************/
+
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 64px;
+    font-weight: 700px;
+}
+
+.banner-des {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.btn-primary {
+    background-color: #FF900E;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 25px;
+    cursor: pointer;
+    border:0 ;
+    border-radius: 10px;
+}
+.banner img{
+    width:100% ;
+    margin-top: 30px;
+}
+
+
+/******** RESPONSIVE STYLE **********/
+
+/*** mobile device ******/
+@media screen and (max-width:576px){
+    header{
+        padding: 22px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+
+/******* Medium device ********/
+
+@media screen and (min-width:576px) and (max-width:960px){
+    nav{
+        flex-direction: column;
+    }
+
+    header{
+        padding: 22px;
+    }
+}
