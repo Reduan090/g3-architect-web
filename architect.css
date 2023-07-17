@@ -1,3 +1,11 @@
+/*Shared style*/
+.text-light-gray{
+    color: #727272;
+}
+
+
+
+
 /************HEADER**********/
 
 header {
@@ -48,11 +56,7 @@ nav li a {
     font-weight: 700px;
 }
 
-.banner-des {
-    color: #727272;
-    font-size: 16px;
-    font-weight: 400px;
-}
+
 
 .btn-primary {
     background-color: #FF900E;
@@ -60,36 +64,98 @@ nav li a {
     font-size: 20px;
     padding: 20px 25px;
     cursor: pointer;
-    border:0 ;
+    border: 0;
     border-radius: 10px;
 }
-.banner img{
-    width:100% ;
+
+.banner img {
+    width: 100%;
     margin-top: 30px;
 }
 
 
+
+/********** Main Section *************/
+
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/******team style******/
+
+.team-container {
+    display: flex;
+    align-items: center;
+}
+
+.team-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.team-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.team-title {
+    font-size: 2.8rem;
+}
+
+.team-title .quiklist {
+    color: #727272;
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+
+.team-title .text-features {
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
 /******** RESPONSIVE STYLE **********/
 
 /*** mobile device ******/
-@media screen and (max-width:576px){
-    header{
+@media screen and (max-width:576px) {
+    header {
         padding: 22px;
     }
-    nav{
+
+    nav, .team-container
+    {
         flex-direction: column;
     }
+
+    .team-img{
+        grid-template-columns: 1fr;
+    }
+
+    
+    .team-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }   
+
 }
 
 
 /******* Medium device ********/
 
-@media screen and (min-width:576px) and (max-width:960px){
-    nav{
-        flex-direction: column;
+@media screen and (min-width:576px) and (max-width:960px) {
+
+    header {
+        padding: 55px;
     }
 
-    header{
-        padding: 22px;
+    nav, .team-container
+     {
+        flex-direction: column;
+    }
+    
+    .team-content{
+        align-items: center;
     }
 }
