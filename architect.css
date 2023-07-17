@@ -1,5 +1,5 @@
 /*Shared style*/
-.text-light-gray{
+.text-light-gray {
     color: #727272;
 }
 
@@ -116,6 +116,88 @@ main {
     font-weight: 700;
 }
 
+
+
+/**********Some facts********/
+
+.facts {
+    margin-top: 160px;
+}
+
+.fact-title {
+    color: var(--dark-01, #131313);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card {
+    background: #FFF;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 35px;
+    margin-top: 100px;
+}
+
+.facts-card-container .card-stats {
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.facts-card-container .card-title {
+    color: #727272;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/******Sponsor sector*******/
+
+.sponsor-container{
+    margin-top: 150px;
+}
+
+.sponsor-title {
+    color: #131313;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.sponsor-des {
+    color: #727272;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+.sponsors{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.sponsors img{
+    width:150px;
+    height: 50px;
+}
+
+
+
+
 /******** RESPONSIVE STYLE **********/
 
 /*** mobile device ******/
@@ -124,22 +206,36 @@ main {
         padding: 22px;
     }
 
-    nav, .team-container
+    nav,
+    .team-container,
+    .facts-card-container,
+    .sponsors
     {
         flex-direction: column;
     }
 
-    .team-img{
+    .team-img {
         grid-template-columns: 1fr;
     }
 
-    
+
     .team-content {
         padding-left: 20px;
         padding-right: 20px;
-    }   
+    }
 
+    .facts-card-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .fact-title-p {
+        padding-left: 20px;
+    }
+
+  
 }
+
 
 
 /******* Medium device ********/
@@ -150,12 +246,38 @@ main {
         padding: 55px;
     }
 
-    nav, .team-container
-     {
+    nav,
+    .team-container,
+    .facts-card-container {
         flex-direction: column;
     }
-    
-    .team-content{
+
+    .team-content {
         align-items: center;
     }
+
+    .facts-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        padding-left: 85px;
+    }
+
+    .facts-card-container .card {
+        margin: 7px;
+    }
+
+    .fact-title-p {
+        padding-left: 74px;
+    }
+
+    .sponsors img{
+        width:90px;
+        height: 30px;
+    }
+    
+    .sponsor-container{
+        margin-top: 100px;
+    }
+
 }
